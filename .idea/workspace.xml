@@ -5,10 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40daccd9-3473-430e-98f5-c119c206c372" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/JUnitCycleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/TestControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/controller/BlogApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/domain/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/dto/AddArticleRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/dto/ArticleRespnse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/dto/UpdateArticleRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/repository/BlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/controller/BlogApiControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/SpringBootDeveloperApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/SpringBootDeveloperApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/TestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/TestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/TestControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +36,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -41,8 +57,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,12 +88,16 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workSpace\springboot\springnoot-developer\src\main\resources" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="me.minhyeon.springbootdeveloper.controller" />
       <recent name="me.minhyeon.springbootdeveloper" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestControllerTest.getAllMembers">
-    <configuration name="me.minhyeon.springbootdeveloper.SpringBootDeveloperApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Gradle.BlogApiControllerTest">
+    <configuration name="SpringBootDeveloperApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.minhyeon.springbootdeveloper.SpringBootDeveloperApplication" />
       <module name="springnoot-developer.main" />
       <extension name="coverage">
@@ -90,7 +110,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JUnitCycleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BlogApiControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -103,7 +123,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;JUnitCycleTest&quot;" />
+            <option value="&quot;me.minhyeon.springbootdeveloper.controller.BlogApiControllerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -113,7 +133,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="JUnitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BlogApiControllerTest.deleteArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -126,7 +146,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;JUnitTest&quot;" />
+            <option value="&quot;me.minhyeon.springbootdeveloper.controller.BlogApiControllerTest.deleteArticle&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -136,7 +156,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="JUnitTest.junitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BlogApiControllerTest.findAllArticles" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -149,7 +169,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;JUnitTest.junitTest&quot;" />
+            <option value="&quot;me.minhyeon.springbootdeveloper.controller.BlogApiControllerTest.findAllArticles&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -159,7 +179,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestControllerTest.getAllMembers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BlogApiControllerTest.findArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -172,7 +192,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;me.minhyeon.springbootdeveloper.TestControllerTest.getAllMembers&quot;" />
+            <option value="&quot;me.minhyeon.springbootdeveloper.controller.BlogApiControllerTest.findArticle&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestControllerTest.getAllMembers" />
-        <item itemvalue="Gradle.JUnitCycleTest" />
-        <item itemvalue="Gradle.JUnitTest.junitTest" />
-        <item itemvalue="Gradle.JUnitTest" />
-        <item itemvalue="Application.me.minhyeon.springbootdeveloper.SpringBootDeveloperApplication" />
+        <item itemvalue="Gradle.BlogApiControllerTest" />
+        <item itemvalue="Gradle.BlogApiControllerTest.deleteArticle" />
+        <item itemvalue="Gradle.BlogApiControllerTest.findArticle" />
+        <item itemvalue="Gradle.BlogApiControllerTest.findAllArticles" />
+        <item itemvalue="Application.SpringBootDeveloperApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -220,11 +240,25 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/TestControllerTest.java</url>
           <line>42</line>
-          <properties class="me.minhyeon.springbootdeveloper.TestControllerTest" method="getAllMembers">
+          <properties class="me.minhyeon.springbootdeveloper.TestControllerTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/controller/BlogApiControllerTest.java</url>
+          <line>84</line>
+          <properties class="me.minhyeon.springbootdeveloper.controller.BlogApiControllerTest" method="findAllArticles">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/controller/BlogApiControllerTest.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
