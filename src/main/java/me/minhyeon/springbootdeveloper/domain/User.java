@@ -36,38 +36,38 @@ public class User implements UserDetails { //UserDetails를 상속받아 인증 
     }
 
 
-    @Override
+    @Override // 권한 반환
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority("user"));
     }
 
-    @Override
+    @Override // 사용자의 id를 반환(고유한 값)
     public String getUsername() {
         return email;
     }
 
-    @Override
+    @Override // 사용자의 패스워드 반환
     public String getPassword() {
         return password;
     }
 
-    @Override
+    @Override // 계정 만료여부 반환
     public boolean isAccountNonExpired() {
-        return true;
+        return true; //true -> 만료되지 않음
     }
 
-    @Override
+    @Override // 계정 잠금 여부 반환
     public boolean isAccountNonLocked() {
-        return true;
+        return true; //true -> 잠금되지 않음
     }
 
-    @Override
+    @Override //패스워드 만료 여부
     public boolean isCredentialsNonExpired() {
-        return true;
+        return true; //true -> 만료되지 않음
     }
 
-    @Override
+    @Override // 계정 사용 가능 여부
     public boolean isEnabled() {
-        return true;
+        return true; //true => 사용 가능
     }
 }
