@@ -5,17 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40daccd9-3473-430e-98f5-c119c206c372" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/controller/UserApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/controller/UserViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/dto/AddUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/service/UserDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/config/TokenAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/config/jwt/JwtProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/config/jwt/TokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/controller/TokenApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/domain/RefreshToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/dto/CreateAccessTokenRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/dto/CreateAccessTokenResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/repository/RefreshTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/service/RefreshTokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/service/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/config/jwt/JwtFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/config/jwt/TokenProviderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/controller/TokenApiControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +61,8 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -70,19 +78,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/workSpace/springboot/springnoot-developer/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "spring.configuration.checksum": "bcb135cce32908ff5edf10fd7829565f",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workSpace\springboot\springnoot-developer\src\main\resources" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -98,7 +125,7 @@
       <recent name="me.minhyeon.springbootdeveloper.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SpringBootDeveloperApplication">
+  <component name="RunManager" selected="Spring Boot.SpringBootDeveloperApplication">
     <configuration name="SpringBootDeveloperApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.minhyeon.springbootdeveloper.SpringBootDeveloperApplication" />
       <module name="springnoot-developer.main" />
@@ -133,6 +160,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="BlogApiControllerTest.deleteArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -156,61 +184,41 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="BlogApiControllerTest.findAllArticles" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.minhyeon.springbootdeveloper.controller.BlogApiControllerTest.findAllArticles&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+    <configuration name="rest-api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="BlogApiControllerTest.findArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.minhyeon.springbootdeveloper.controller.BlogApiControllerTest.findArticle&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="TokenProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springnoot-developer.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.minhyeon.springbootdeveloper.config.jwt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.minhyeon.springbootdeveloper.config.jwt" />
+      <option name="MAIN_CLASS_NAME" value="me.minhyeon.springbootdeveloper.config.jwt.TokenProviderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootDeveloperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springnoot-developer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="me.minhyeon.springbootdeveloper.SpringBootDeveloperApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.rest-api | #1" />
+        <item itemvalue="JUnit.TokenProviderTest" />
         <item itemvalue="Application.SpringBootDeveloperApplication" />
         <item itemvalue="Gradle.BlogApiControllerTest" />
         <item itemvalue="Gradle.BlogApiControllerTest.deleteArticle" />
-        <item itemvalue="Gradle.BlogApiControllerTest.findArticle" />
-        <item itemvalue="Gradle.BlogApiControllerTest.findAllArticles" />
       </list>
     </recent_temporary>
   </component>
@@ -222,8 +230,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686667369367</updated>
+      <workItem from="1687505266552" duration="8838000" />
+      <workItem from="1687660818225" duration="3026000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -266,6 +279,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/controller/UserApiController.java</url>
           <line>22</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/config/jwt/TokenProviderTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
