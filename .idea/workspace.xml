@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40daccd9-3473-430e-98f5-c119c206c372" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/config/TokenAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/config/jwt/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/config/jwt/TokenProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/controller/TokenApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/domain/RefreshToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/dto/CreateAccessTokenRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/dto/CreateAccessTokenResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/repository/RefreshTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/service/RefreshTokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/service/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/config/jwt/JwtFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/config/jwt/TokenProviderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/me/minhyeon/springbootdeveloper/controller/TokenApiControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/minhyeon/springbootdeveloper/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="40daccd9-3473-430e-98f5-c119c206c372" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -231,8 +210,17 @@
       <option name="presentableId" value="Default" />
       <updated>1686667369367</updated>
       <workItem from="1687505266552" duration="8838000" />
-      <workItem from="1687660818225" duration="3026000" />
+      <workItem from="1687660818225" duration="3662000" />
     </task>
+    <task id="LOCAL-00001" summary="feat : oauth 설정">
+      <option name="closed" value="true" />
+      <created>1687690600316</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687690600316</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +236,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat : oauth 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : oauth 설정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
